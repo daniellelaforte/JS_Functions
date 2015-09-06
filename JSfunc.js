@@ -34,11 +34,16 @@ function excite(str){
 }
 
 function sun(str) {
-	if (((str.indexOf('s') || str.indexOf('S')) == (str.indexOf('u') - 1 || str.indexOf('U') - 1)) && ((str.indexOf('s') || str.indexOf('S')) == (str.indexOf('n') - 2 || str.indexOf('N') - 2)))
-		return true;
-	else
-		return false;
+	var s = str.indexOf('s');
+	var u = str.indexOf('u');
+	var n = str.indexOf('n');
+     if ((s == u - 1) && (s == n - 2 ))
+	 	return true;
+	 else
+	 	return false;
 }
+
+
 
 tripleFive();
 
@@ -54,5 +59,6 @@ console.log(startswithA("apple"));
 
 console.log(excite("Awesome"));
 
-console.log(sun("Sunday"));
+console.log(sun("sunday"));
+
 
