@@ -28,6 +28,18 @@ function startswithA(str){
 
 }
 
+function excite(str){
+	 str = str + "!!!";
+     return str;
+}
+
+function sun(str) {
+	if (((str.indexOf('s') || str.indexOf('S')) == (str.indexOf('u') - 1 || str.indexOf('U') - 1)) && ((str.indexOf('s') || str.indexOf('S')) == (str.indexOf('n') - 2 || str.indexOf('N') - 2)))
+		return true;
+	else
+		return false;
+}
+
 tripleFive();
 
 console.log(lastLetter('Hello'));
@@ -39,4 +51,8 @@ console.log(negate(-3));
 console.log(toArray(1, 2, 4));
 
 console.log(startswithA("apple"));
+
+console.log(excite("Awesome"));
+
+console.log(sun("Sunday"));
 
