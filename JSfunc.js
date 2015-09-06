@@ -44,6 +44,20 @@ function sun(str) {
 	 	return false;
 }
 
+function tiny(num){
+	if ((num < 1) && (num > 0))
+     	return true;
+ 	else 
+ 		return false;
+}
+
+function getSeconds(str){
+	var min = Number(str.substring(0, 2));
+	var sec = Number(str.substring(3, 5));
+
+	return (min*60 + sec);
+}
+
 
 
 tripleFive();
@@ -62,4 +76,6 @@ console.log(excite("Awesome"));
 
 console.log(sun("Sunday"));
 
+console.log(tiny(-5));
 
+console.log(getSeconds("10:25"));
