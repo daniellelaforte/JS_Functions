@@ -35,9 +35,10 @@ function excite(str){
 
 function sun(str) {
 	var s = str.indexOf('s');
+	var ss = str.indexOf('S');
 	var u = str.indexOf('u');
 	var n = str.indexOf('n');
-     if ((s == u - 1) && (s == n - 2 ))
+     if (((s == u - 1) && (s == n - 2 )) || ((ss == u - 1) && (ss == n - 2 )))
 	 	return true;
 	 else
 	 	return false;
@@ -59,6 +60,6 @@ console.log(startswithA("apple"));
 
 console.log(excite("Awesome"));
 
-console.log(sun("sunday"));
+console.log(sun("Sunday"));
 
 
